@@ -29,14 +29,16 @@
 
     <main class="flex-grow-1 container my-4 p-4 bg-white rounded shadow-sm" style="max-width: 500px;">
         <h2 class="h4 text-center mb-4 text-primary">Вхід до Акаунту</h2>
-        <form action="#" method="POST">
+        <form id="login-form" action="#" method="POST">
             <div class="mb-3">
                 <label for="email" class="form-label">Email:</label>
                 <input type="email" id="email" name="email" class="form-control" required>
+                <div id="email-error" class="invalid-feedback" style="display: none;">Будь ласка, введіть коректний Email.</div>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Пароль:</label>
                 <input type="password" id="password" name="password" class="form-control" required>
+                <div id="password-error" class="invalid-feedback" style="display: none;">Пароль не може бути порожнім.</div>
             </div>
             <button type="submit" class="btn btn-primary w-100">Увійти</button>
         </form>
@@ -47,5 +49,8 @@
             &copy; 2025 Телефонний Довідник. Всі права захищені. Лабораторна робота.
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>
